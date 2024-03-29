@@ -48,7 +48,6 @@ package main
 
 func firstBadVersion(n int) int {
 	var mid int
-	var isBad bool
 	left, right := 1, n
 	for left <= right {
 		mid = (left + right) / 2
