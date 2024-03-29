@@ -52,8 +52,7 @@ func firstBadVersion(n int) int {
 	left, right := 1, n
 	for left <= right {
 		mid = (left + right) / 2
-		isBad = isBadVersion(mid)
-		if isBad {
+		if isBadVersion(mid) {
 			right = mid - 1
 		} else {
 			left = mid + 1
