@@ -46,8 +46,8 @@ package main
 // [3,3,7,7,10]
 func singleNonDuplicate(nums []int) int {
 	var mid int
-	left, right := 0, len(nums)
-	// 开区间
+	left, right := 0, len(nums)-1
+	// 不能包含等于
 	for left < right {
 		mid = (left + right) / 2
 		// 中间位是奇数时跟前一个为一对
